@@ -1,4 +1,4 @@
-module vending_machine_18105070(
+module iiitb_vm(
 input clk,
 input rst,
 input [1:0]in, // 01 = 5 rs, 10 = 10 rs
