@@ -15,7 +15,7 @@ iiitb_vm uut(
 );
 initial begin
 //initialise inputs
-$dumpfile("vending_machine_18105070.vcd");
+  $dumpfile("iiitb_vm.vcd");
   $dumpvars(0,iiitb_vm_tb);
 rst = 1;
 clk = 0;
