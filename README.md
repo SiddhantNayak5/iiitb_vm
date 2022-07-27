@@ -4,4 +4,4 @@
 2. $ cd iiitb_vm
 3. $ cd iiitb_vm.v
 4. $ ./a.out
-5. $ gtkwave vending_machine_18105070.vcd
+5. $ gtkwave iiitb_vm.vcd
