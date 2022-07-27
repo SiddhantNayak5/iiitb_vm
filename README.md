@@ -1,1 +1,1 @@
-# IIITB_VM
+# iiitb_vm - vending machine
