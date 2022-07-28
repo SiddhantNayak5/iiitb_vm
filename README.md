@@ -80,13 +80,21 @@ To install GTKWave, type the following command in the terminal:
  $ ./a.out
  $ gtkwave iiitb_vm.vcd 
  ```
- ### CONTRIBUTORS
+ ### AUTHOR 
  - Siddhant Nayak
+ ### CONTRIBUTORS
+ 
  - Kunal Ghosh
+ - Arsh Kedia 
+ - Rohit Raj
+ - Lokesh Majhi
  
  ### ACKNOWLEDGEMENTS
  - Kunal Ghosh
  
  ### CONTACT INFOMRATION
- - Siddhant Nayak, Postgraduate Studend, International Institute of Information Technology, Bangalore siddhantn72@gmail.com
+ - Siddhant Nayak, M.Tech VLSI, 2022-2024, International Institute of Information Technology, Bangalore siddhantn72@gmail.com
  - Kunal Ghosh, Director, VSD Corp. Pvt. Ltd. kunalghosh@gmail.com
+ - Arsh Kedia, M.Tech VLSI, 2022-2024, International Institute of Information Technology, arshkedia99@gmail.com
+ - Rohit Raj, M.Tech VLSI, 2022-2024, International Institute of Information Technology, rohitraj116@gmail.com
+ - Lokesh Majhi, M.Tech VLSI, 2022-2024, International Institute of Information Technology, majhilokesh10@gmail.com
