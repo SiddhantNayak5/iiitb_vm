@@ -1,4 +1,4 @@
-# iiitb_vm - vending machine
+# iiitb_vm - Vending Machine with Change System 
 ### INTRODUCTION
 In this project, a vending machine with change system using
 Verilog HDL is proposed based on finite state machine. A vending
@@ -80,3 +80,13 @@ To install GTKWave, type the following command in the terminal:
  $ ./a.out
  $ gtkwave iiitb_vm.vcd 
  ```
+ ### CONTRIBUTORS
+ - Siddhant Nayak
+ - Kunal Ghosh
+ 
+ ### ACKNOWLEDGEMENTS
+ - Kunal Ghosh
+ 
+ ### CONTACT INFOMRATION
+ - Siddhant Nayak, Postgraduate Studend, International Institute of Information Technology, Bangalore siddhantn72@gmail.com
+ - Kunal Ghosh, Director, VSD Corp. Pvt. Ltd. kunalghosh@gmail.com
