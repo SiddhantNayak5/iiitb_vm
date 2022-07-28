@@ -87,7 +87,7 @@ To install GTKWave, type the following command in the terminal:
  - Kunal Ghosh
  - Arsh Kedia 
  - Rohit Raj
- - Lokesh Majhi
+ - Lokesh Maji
  
  ### ACKNOWLEDGEMENTS
  - Kunal Ghosh
@@ -97,4 +97,4 @@ To install GTKWave, type the following command in the terminal:
  - Kunal Ghosh, Director, VSD Corp. Pvt. Ltd. kunalghosh@gmail.com
  - Arsh Kedia, M.Tech VLSI, 2022-2024, International Institute of Information Technology, arshkedia99@gmail.com
  - Rohit Raj, M.Tech VLSI, 2022-2024, International Institute of Information Technology, rohitraj116@gmail.com
- - Lokesh Majhi, M.Tech VLSI, 2022-2024, International Institute of Information Technology, majhilokesh10@gmail.com
+ - Lokesh Maji, M.Tech VLSI, 2022-2024, International Institute of Information Technology, majilokesh10@gmail.com
