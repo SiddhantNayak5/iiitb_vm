@@ -8,6 +8,7 @@ is made.
 
 ### STATE TRANSITION DIAGRAM
 ![image](https://user-images.githubusercontent.com/110079689/181303096-08f7500d-2916-4bd7-a4de-3958465a53e1.png)
+
 The above figure is the state transition diagram of a vending machine with change system. In this project,the vending machine provides only one item(for example- a water bottle) whose cost is Rs15.
 
 ### STATE DIAGRAM DETAILS 
@@ -55,6 +56,7 @@ The product costs 15Rs. Move to State 0, OUTPUT = 1, CHANGE
 ### OUTPUT WAVEFORM
 
 ![image](https://user-images.githubusercontent.com/110079689/181305635-fb71da5b-36a0-4787-9c12-2a85ac31bb27.png)
+
 In the above figure,the output waveform in gtkwave is being shown.
 
 ### TOOLS USED
