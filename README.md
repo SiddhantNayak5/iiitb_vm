@@ -55,7 +55,8 @@ The product costs 15Rs. Move to State 0, OUTPUT = 1, CHANGE
 
 ### OUTPUT WAVEFORM
 
-![image](https://user-images.githubusercontent.com/110079689/181305635-fb71da5b-36a0-4787-9c12-2a85ac31bb27.png)
+![waveformf](https://user-images.githubusercontent.com/110079689/184367079-5e00f735-2c5a-472a-aa05-06b02998f4b6.png)
+
 
 In the above figure,the output waveform in gtkwave is being shown.
 
