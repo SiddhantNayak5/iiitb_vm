@@ -10,8 +10,8 @@ module iiitb_vm_tb;
   wire[1:0] change;
 
  iiitb_vm uut(
-  .clk(clk),
-  .rst(rst),
+  .clock(clk),
+  .reset(rst),
   .in(in),
   .out(out),
   .change(change)
@@ -25,7 +25,7 @@ $dumpfile("iiitb_vm.vcd");
   clk = 0;
 
   #6 rst = 0;
-  in = 2;
+  in = 1;
   #19 in = 2;
   #25 $finish;
 
