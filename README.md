@@ -149,11 +149,51 @@ Below picture gives an insight of the procedure. Here while using iverilog, you 
 
 ![image](https://user-images.githubusercontent.com/72696170/183296780-4bad9547-69e9-4cee-b791-acb5a38951bf.png)
 
+
+***To clone the repository and download the netlist files for simulation, enter the following command in your terminal***<br/>
+```
+$ git clone https://github.com/ArshKedia/iiitb_3bit_rc
+```
+***After cloning the git repository, type the following in "iiitb_3bit_rc" directory in the terminal for RTL Simulation.***<br/>
+```
+$ iverilog iiitb_3bit_rc.v iiitb_3bit_rc_tb.v
+$ ./a.out 
+$ gtkwave iiitb_3bit_rr_out.vcd
+```
+***For synthesis, run "yosys_run.sh" file in the same directory in terminal.***<br/>
+```
+$ yosys -s yosys_run.sh
+```
+The above commands create the netlist of iverilog code.<br/><br/>
+***For Gate level syntheses(GLS), type the following in the same directory in terminal***<br/>
+```
+$ iverilog -DFUNCTIONAL -DUNIT_DELAY=#1 ../iiitb_3bit_rc/verilog_model/primitives.v ../iiitb_3bit_rc/verilog_model/sky130_fd_sc_hd.v iiitb_3bit_rc_net.v iiitb_3bit_rc_tb.v
+```
+***To generate the simulation, type the following in the same directory in terminal***<br/>
+```
+$ ./a.out
+$ gtkwave iiitb_3bit_rr.vcd
+```
+
+
 ## NETLIST <br/>
 In electronic design, a netlist is a description of the connectivity of an electronic circuit.In its simplest form, a netlist consists of a list of the electronic components in a circuit and a list of the nodes they are connected to. A network (net) is a collection of two or more interconnected components.<br/>
 
- ## AUTHOR 
- - Siddhant Nayak
+On running the yosys script, we get the following output:
+
+- Stats <br/>
+
+ ![Screenshot from 2022-08-16 21-24-12](https://user-images.githubusercontent.com/110079689/184926571-d4ef5dd3-f328-44ec-b7a9-30267cdfb29d.png)
+ 
+ 
+## POST SYNTHESIS SIMULATION <br/>
+
+![Screenshot from 2022-08-16 21-30-21](https://user-images.githubusercontent.com/110079689/184927296-9f68e1c8-111e-489c-9f77-b13b083ad75b.png)
+
+
+ ## AUTHOR
+ - Siddhant Nayak 
+ 
  ## CONTRIBUTORS
  
  - Kunal Ghosh
