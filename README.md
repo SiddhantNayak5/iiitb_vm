@@ -1,17 +1,17 @@
 # iiitb_vm - Vending Machine with Change System 
-### INTRODUCTION
+## INTRODUCTION
 In this project, a vending machine with change system using
 Verilog HDL is proposed based on finite state machine. A vending
 machine is an automated machine that provides items such as snacks,
 beverages and lottery tickets to consumers after payment into the machine
 is made.
 
-### STATE TRANSITION DIAGRAM
+## STATE TRANSITION DIAGRAM
 ![image](https://user-images.githubusercontent.com/110079689/181303096-08f7500d-2916-4bd7-a4de-3958465a53e1.png)
 
 The above figure is the state transition diagram of a vending machine with change system. In this project,the vending machine provides only one item(for example- a water bottle) whose cost is Rs15.
 
-### STATE DIAGRAM DETAILS 
+## STATE DIAGRAM DETAILS 
 Any sequential digital circuit can be converted into a state machine
 using state diagram. In a State machine the circuit’s output is
 defined in a different set of states i.e. each output is a state. There
@@ -26,12 +26,12 @@ In this project, we will use Mealy machine. In a Mealy machine the
 output depends on the input as well as the present state. Here we
 have taken the product cost as Rs15.
 
-#### State 0: 0Rs in Vending Machine –
+### State 0: 0Rs in Vending Machine –
 If nothing added: Stay on State 0, OUTPUT = 0, CHANGE = 0.
 If 5Rs added: Move to State 1, OUTPUT = 0, CHANGE = 0.
 If 10Rs added: Move to State 2, OUTPUT = 0, CHANGE = 0.
 
-#### State 1: 5Rs in Vending Machine –
+### State 1: 5Rs in Vending Machine –
 If nothing added: Here, this means the vending machine waited
 sometime but no money was added signifying an incomplete
 transaction, thus the vending machine should return back the
@@ -43,7 +43,7 @@ If 10Rs added: Adding 10Rs means the vending machine now has
 15Rs total thus, a bottle will be returned with no CHANGE.
 Move to State 0, OUTPUT = 1, CHANGE = Rs0.
 
-#### State 2: 10Rs in Vending Machine –
+### State 2: 10Rs in Vending Machine –
 If nothing added: Again, incomplete transaction thus vending
 machine returns the money added as CHANGE (10Rs). No bottle
 given.
@@ -53,22 +53,22 @@ If 5Rs added: Signifies a complete transaction, a bottle is returned
 The product costs 15Rs. Move to State 0, OUTPUT = 1, CHANGE
 = Rs5 (01).
 
-### OUTPUT WAVEFORM
+## OUTPUT WAVEFORM
 
 ![waveformf](https://user-images.githubusercontent.com/110079689/184367079-5e00f735-2c5a-472a-aa05-06b02998f4b6.png)
 
 
 In the above figure,the output waveform in gtkwave is being shown.
 
-### TOOLS USED
-#### IVERILOG
+## TOOLS USED
+### IVERILOG
 
 Icarus Verilog is a Verilog simulation and synthesis tool.
 To install iverilog, type the following command in the terminal:
 
 ``` $ sudo apt install iverilog```
 
-#### GTKWAVE
+### GTKWAVE
 
 GTKWave is a VCD waveform viewer based on the GTK library. This viewer supports VCD and LXT formatsfor signal dumps.
 To install GTKWave, type the following command in the terminal:
@@ -83,7 +83,7 @@ To install GTKWave, type the following command in the terminal:
  $ ./a.out
  $ gtkwave iiitb_vm.vcd 
  ```
- # yosys – Yosys Open SYnthesis Suite
+## yosys – Yosys Open SYnthesis Suite
 Yosys is a framework for Verilog RTL synthesis. It currently has extensive Verilog-2005 support and provides a basic set of synthesis algorithms for various application domains.
 
 Synthesis transforms the simple RTL design into a gate-level netlist with all the constraints as specified by the designer. In simple language, Synthesis is a process that converts the abstract form of design to a properly implemented chip in terms of logic gates.
@@ -124,7 +124,7 @@ Tests are located in the tests subdirectory and can be executed using the test t
 ```
 $ make test
 ```
-# GLS - Gate Level Simulation
+## GLS - Gate Level Simulation
 GLS is generating the simulation output by running test bench with netlist file generated from synthesis as design under test. Netlist is logically same as RTL code, therefore, same test bench can be used for it.
 
 **Why GLS?**
@@ -148,19 +148,23 @@ The main reasons for running GLS are as follows:
 Below picture gives an insight of the procedure. Here while using iverilog, you also include gate level verilog models to generate GLS simulation.
 
 ![image](https://user-images.githubusercontent.com/72696170/183296780-4bad9547-69e9-4cee-b791-acb5a38951bf.png)
- ### AUTHOR 
+
+## NETLIST <br/>
+In electronic design, a netlist is a description of the connectivity of an electronic circuit.In its simplest form, a netlist consists of a list of the electronic components in a circuit and a list of the nodes they are connected to. A network (net) is a collection of two or more interconnected components.<br/>
+
+ ## AUTHOR 
  - Siddhant Nayak
- ### CONTRIBUTORS
+ ## CONTRIBUTORS
  
  - Kunal Ghosh
  - Arsh Kedia 
  - Rohit Raj
  - Lokesh Maji
  
- ### ACKNOWLEDGEMENTS
+ ## ACKNOWLEDGEMENTS
  - Kunal Ghosh
  
- ### CONTACT INFOMRATION
+ ## CONTACT INFOMRATION
  - Siddhant Nayak, M.Tech VLSI, 2022-2024, International Institute of Information Technology, Bangalore siddhantn72@gmail.com
  - Kunal Ghosh, Director, VSD Corp. Pvt. Ltd. kunalghosh@gmail.com
  - Arsh Kedia, M.Tech VLSI, 2022-2024, International Institute of Information Technology, arshkedia99@gmail.com
