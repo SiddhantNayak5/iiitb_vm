@@ -168,7 +168,7 @@ $ yosys -s yosys_run.sh
 The above commands create the netlist of iverilog code.<br/><br/>
 ***For Gate level syntheses(GLS), type the following in the same directory in terminal***<br/>
 ```
-$ iverilog -DFUNCTIONAL -DUNIT_DELAY=#1 ../iiitb_3bit_rc/verilog_model/primitives.v ../iiitb_3bit_rc/verilog_model/sky130_fd_sc_hd.v iiitb_3bit_rc_net.v iiitb_3bit_rc_tb.v
+$ iverilog -DFUNCTIONAL -DUNIT_DELAY=#1 ../iiitb_vm/verilog_model/primitives.v ../iiitb_vm/verilog_model/sky130_fd_sc_hd.v iiitb_vm_net.v iiitb_vm_tb.v
 ```
 ***To generate the simulation, type the following in the same directory in terminal***<br/>
 ```
@@ -251,10 +251,14 @@ $   cd OpenLane/
 $   cd designs/
 $   mkdir iiitb_vm
 $   cd iiitb_vm/
-$   wget https://raw.githubusercontent.com/vinayrayapati/iiitb_rv32i/main/config.json
+```
+Then copy the config.json file in the current directory and type the following commands:
+```
 $   mkdir src
 $   cd src/
-$   wget https://raw.githubusercontent.com/vinayrayapati/iiitb_rv32i/main/iiitb_rv32i.v
+```
+Copy the iiitb_vm.v file in the current directory and type the following commands:
+```
 $   cd ../../../
 $   sudo make mount
 $   ./flow.tcl -design iitb_vm
