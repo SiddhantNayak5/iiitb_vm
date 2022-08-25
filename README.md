@@ -249,8 +249,8 @@ Open terminal in home directory
 ```
 $   cd OpenLane/
 $   cd designs/
-$   mkdir iiitb_rv32i
-$   cd iiitb_rv32i/
+$   mkdir iiitb_vm
+$   cd iiitb_vm/
 $   wget https://raw.githubusercontent.com/vinayrayapati/iiitb_rv32i/main/config.json
 $   mkdir src
 $   cd src/
