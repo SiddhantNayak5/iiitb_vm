@@ -153,13 +153,13 @@ Below picture gives an insight of the procedure. Here while using iverilog, you 
 
 ***To clone the repository and download the netlist files for simulation, enter the following command in your terminal***<br/>
 ```
-$ git clone https://github.com/ArshKedia/iiitb_3bit_rc
+$ git clone https://github.com/SiddhantNayak5/iiitb_vm
 ```
-***After cloning the git repository, type the following in "iiitb_3bit_rc" directory in the terminal for RTL Simulation.***<br/>
+***After cloning the git repository, type the following in "iiitb_vm" directory in the terminal for RTL Simulation.***<br/>
 ```
-$ iverilog iiitb_3bit_rc.v iiitb_3bit_rc_tb.v
+$ iverilog iiitb_vm.v iiitb_vm_tb.v
 $ ./a.out 
-$ gtkwave iiitb_3bit_rr_out.vcd
+$ gtkwave iiitb_3vm_out.vcd
 ```
 ***For synthesis, run "yosys_run.sh" file in the same directory in terminal.***<br/>
 ```
