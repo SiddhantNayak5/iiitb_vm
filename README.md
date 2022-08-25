@@ -257,7 +257,8 @@ $   cd src/
 $   wget https://raw.githubusercontent.com/vinayrayapati/iiitb_rv32i/main/iiitb_rv32i.v
 $   cd ../../../
 $   sudo make mount
-$   ./flow.tcl -design iiitb_rv32i
+$   ./flow.tcl -design iitb_vm
+
 ```
 To see the layout we use a tool called magic which we installed earlier.Type the following command in the terminal opened in the path to your design/runs/latest run folder/final/def/
  
