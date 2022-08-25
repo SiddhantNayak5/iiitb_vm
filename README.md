@@ -159,7 +159,7 @@ $ git clone https://github.com/SiddhantNayak5/iiitb_vm
 ```
 $ iverilog iiitb_vm.v iiitb_vm_tb.v
 $ ./a.out 
-$ gtkwave iiitb_3vm_out.vcd
+$ gtkwave iiitb_vm.vcd
 ```
 ***For synthesis, run "yosys_run.sh" file in the same directory in terminal.***<br/>
 ```
@@ -173,7 +173,7 @@ $ iverilog -DFUNCTIONAL -DUNIT_DELAY=#1 ../iiitb_3bit_rc/verilog_model/primitive
 ***To generate the simulation, type the following in the same directory in terminal***<br/>
 ```
 $ ./a.out
-$ gtkwave iiitb_3bit_rr.vcd
+$ gtkwave iiitb_vm.vcd
 ```
 
 
@@ -249,8 +249,8 @@ Open terminal in home directory
 ```
 $   cd OpenLane/
 $   cd designs/
-$   mkdir iiitb_iiitb_rv32i
-$   cd iiitb_iiitb_rv32i/
+$   mkdir iiitb_rv32i
+$   cd iiitb_rv32i/
 $   wget https://raw.githubusercontent.com/vinayrayapati/iiitb_rv32i/main/config.json
 $   mkdir src
 $   cd src/
