@@ -271,9 +271,6 @@ $ magic -T /home/siddhant/OpenLane/pdks/sky130A/libs.tech/magic/sky130A.tech lef
 
 ```
 
-The final layout:
-
-![floor_planning](https://user-images.githubusercontent.com/110079689/186615337-750ee3ae-381e-488e-9c20-5acc77bf9222.png)
 
 ## COUSTOMIZING THE LAYOUT
 ### PREPERATION
