@@ -317,7 +317,8 @@ Modify the json file by including the following lines:
 
  ## PLACEMENT
  
- ![vm_magic](https://user-images.githubusercontent.com/110079689/187409848-46268486-0b23-46bf-bb4f-63e3904cf15b.png)
+ ![Screenshot from 2022-08-30 20-13-06](https://user-images.githubusercontent.com/110079689/187467484-bbce2dfe-d13e-4f82-87b7-0bbc10e0aea6.png)
+
  ![vsdinv](https://user-images.githubusercontent.com/110079689/187409832-4a01061c-479d-4ae2-b22c-a6a4ec9f44a5.png)
 
 
