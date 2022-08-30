@@ -314,7 +314,7 @@ Modify the json file by including the following lines:
     
     In order to integrate the standard cell in the OpenLANE flow, invoke openLANE as usual and carry out following steps:<br/>
 ```
-prep -design iiitb_3bit_rc
+prep -design iiitb_vm
 set lefs [glob $::env(DESIGN_DIR)/src/*.lef]
 add_lefs -src $lefs
 run_synthesis
@@ -323,7 +323,7 @@ run_placement
 ```
 To see the layout,invoke magic from the results/placement directory using the following command. <br/>
 ```
-$ magic -T /home/arsh/OpenLane/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.nom.lef def read iiitb_3bit_rc.def &
+$ magic -T /home/siddhant/OpenLane/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.nom.lef def read iiitb_vm.def &
 
 ```
 
