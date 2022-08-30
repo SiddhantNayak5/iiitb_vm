@@ -345,7 +345,10 @@ $ magic -T /home/siddhant/OpenLane/pdks/sky130A/libs.tech/magic/sky130A.tech lef
  - Lokesh Maji
  
  ## ACKNOWLEDGEMENTS
- - Kunal Ghosh
+ - Kunal Ghosh,Director,VSD Corp. Pvt. Ltd.
+ - Nickson Jose, VLSI Engineer, VSD Corp. Pvt. Ltd.
+ - Madhav Rao, Professor, IIIT-Bangalore.
+ - Nanditha Rao, Professor, IIIT-Bangalore
  
  ## CONTACT INFOMRATION
  - Siddhant Nayak, M.Tech VLSI, 2022-2024, International Institute of Information Technology, Bangalore siddhantn72@gmail.com
