@@ -275,7 +275,47 @@ The final layout:
 
 ![floor_planning](https://user-images.githubusercontent.com/110079689/186615337-750ee3ae-381e-488e-9c20-5acc77bf9222.png)
 
- ## Placement
+## COUSTOMIZING THE LAYOUT
+### PREPERATION
+The layout is generated using OpenLane. To run a custom design on openlane, Navigate to the openlane folder and run the following commands:<br>
+```
+$ cd designs
+
+$ mkdir iiitb_vm
+
+$ cd iiitb_vm
+
+$ mkdir src
+
+$ touch config.json
+
+$ cd src
+
+$ touch iiitb_vm.v
+```
+
+The iiitb_vm.v file should contain the verilog RTL code you have used and got the post synthesis simulation for. <br>
+
+Copy  `sky130_fd_sc_hd__fast.lib`, `sky130_fd_sc_hd__slow.lib`, `sky130_fd_sc_hd__typical.lib` and `sky130_vsdinv.lef` files to `src` folder in your design. <br>
+
+
+### INCLUDING THE SKY130_VSDINV CELL
+
+Modify the json file by including the following lines:
+
+    ```
+    "PL_RANDOM_GLB_PLACEMENT": 1,
+    "PL_TARGET_DENSITY": 0.5,
+    "FP_SIZING": "relative",
+    "LIB_SYNTH":"dir::src/sky130_fd_sc_hd__typical.lib",
+    "LIB_FASTEST":"dir::src/sky130_fd_sc_hd__fast.lib",
+    "LIB_SLOWEST":"dir::src/sky130_fd_sc_hd__slow.lib",
+    "LIB_TYPICAL":"dir::src/sky130_fd_sc_hd__typical.lib",
+    "TEST_EXTERNAL_GLOB":"dir::../iiitb_vm/src/*",
+    "SYNTH_DRIVING_CELL":"sky130_vsdinv"
+    ```
+
+ ## PLACEMENT
  
  ![vm_magic](https://user-images.githubusercontent.com/110079689/187409848-46268486-0b23-46bf-bb4f-63e3904cf15b.png)
  ![vsdinv](https://user-images.githubusercontent.com/110079689/187409832-4a01061c-479d-4ae2-b22c-a6a4ec9f44a5.png)
