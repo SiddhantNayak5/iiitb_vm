@@ -275,6 +275,12 @@ The final layout:
 
 ![floor_planning](https://user-images.githubusercontent.com/110079689/186615337-750ee3ae-381e-488e-9c20-5acc77bf9222.png)
 
+ ## Placement
+ 
+ ![vm_magic](https://user-images.githubusercontent.com/110079689/187409848-46268486-0b23-46bf-bb4f-63e3904cf15b.png)
+ ![vsdinv](https://user-images.githubusercontent.com/110079689/187409832-4a01061c-479d-4ae2-b22c-a6a4ec9f44a5.png)
+
+
  ## AUTHOR
  - Siddhant Nayak 
  
