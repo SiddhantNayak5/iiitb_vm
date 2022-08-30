@@ -379,7 +379,9 @@ Then we will go to ``` results/routing``` and type following command on terminal
 ```
 $ magic -T /home/siddhant/OpenLane/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.nom.lef def read iiitb_vm.def &
 ```
+
 We will get following layout after routing:
+
 ![routing](https://user-images.githubusercontent.com/110079689/187500273-3484c4a4-6622-4eb0-9afc-1350617ef41d.png)
 
 
