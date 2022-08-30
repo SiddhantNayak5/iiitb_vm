@@ -312,7 +312,8 @@ Modify the json file by including the following lines:
     "SYNTH_DRIVING_CELL":"sky130_vsdinv"
     ```
     
-    In order to integrate the standard cell in the OpenLANE flow, invoke openLANE as usual and carry out following steps:<br/>
+In order to integrate the standard cell in the OpenLANE flow, invoke openLANE as usual and carry out following steps:<br/>
+   
 ```
 prep -design iiitb_vm
 set lefs [glob $::env(DESIGN_DIR)/src/*.lef]
@@ -321,10 +322,11 @@ run_synthesis
 run_floorplan
 run_placement
 ```
+
 To see the layout,invoke magic from the results/placement directory using the following command. <br/>
+
 ```
 $ magic -T /home/siddhant/OpenLane/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.nom.lef def read iiitb_vm.def &
-
 ```
 
  ## PLACEMENT
