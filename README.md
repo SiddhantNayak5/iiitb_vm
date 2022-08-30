@@ -312,28 +312,76 @@ Modify the json file by including the following lines:
     "SYNTH_DRIVING_CELL":"sky130_vsdinv"
     ```
     
-In order to integrate the standard cell in the OpenLANE flow, invoke openLANE as usual and carry out following steps:<br/>
-   
-```
-prep -design iiitb_vm
-set lefs [glob $::env(DESIGN_DIR)/src/*.lef]
-add_lefs -src $lefs
-run_synthesis
-run_floorplan
-run_placement
-```
+Now we have to do following steps:
 
-To see the layout,invoke magic from the results/placement directory using the following command. <br/>
+```
+ cd OpenLane
+ sudo make mount
+ ./flow.tcl -interactive
+ package require openlane 0.9
+ prep -design iiitb_wm
+ set lefs [glob $::env(DESIGN_DIR)/src/*.lef]
+ add_lefs -src $lefs
+```
+### SYNTHESIS
+In this part we will do sythesis of the project using following code:
+```
+ run_synthesis
+```
+This is synthesized output:
 
+![stat](https://user-images.githubusercontent.com/110079689/187496738-73cb42f0-802f-4f91-a664-629e9880967a.png)
+
+### FLOOR PLANNING
+In floorplanning we will do following steps:
+```
+ run_floorplan
+```
+Then we will go to ``` results/floorplan``` and type following command on terminal
 ```
 $ magic -T /home/siddhant/OpenLane/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.nom.lef def read iiitb_vm.def &
 ```
-
- ## PLACEMENT
+ We will get following floorplan:
+ 
+ 
+ ![floor](https://user-images.githubusercontent.com/110079689/187497731-b2e5f896-cf3a-40cd-ad6a-fda4ec9f9570.png)
+### PLACEMENT
+In placement we will do following steps:
+```
+ run_placement
+```
+Then we will go to ``` results/placement``` and type following command on terminal
+```
+$ magic -T /home/siddhant/OpenLane/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.nom.lef def read iiitb_vm.def &
+```
+We will get following layout:
  
  ![Screenshot from 2022-08-30 20-13-06](https://user-images.githubusercontent.com/110079689/187467484-bbce2dfe-d13e-4f82-87b7-0bbc10e0aea6.png)
 
  ![vsdinv](https://user-images.githubusercontent.com/110079689/187409832-4a01061c-479d-4ae2-b22c-a6a4ec9f44a5.png)
+ 
+### CLOCK TREE SYNTHESIS
+In this section we wil do following step:
+```
+ run_cts
+ ```
+We will get following reports after clock tree synthesis:
+
+![cts](https://user-images.githubusercontent.com/110079689/187499504-293aafca-4119-4abf-9be1-47080367f0f2.png)
+
+ ### ROUTING
+ In this step we will do routing of our projects using:
+ ```
+  run_routing
+ ```
+ 
+Then we will go to ``` results/routing``` and type following command on terminal
+```
+$ magic -T /home/siddhant/OpenLane/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.nom.lef def read iiitb_vm.def &
+```
+We will get following layout after routing:
+![routing](https://user-images.githubusercontent.com/110079689/187500273-3484c4a4-6622-4eb0-9afc-1350617ef41d.png)
+
 
 
  ## AUTHOR
