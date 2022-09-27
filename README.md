@@ -367,6 +367,11 @@ In this section we wil do following step:
  ```
 We will get following reports after clock tree synthesis:
 
+
+![Screenshot from 2022-09-27 14-36-20](https://user-images.githubusercontent.com/110079689/192485519-060e6244-fa01-4907-8e43-5400f1da396a.png)
+
+
+
 ![cts](https://user-images.githubusercontent.com/110079689/187499504-293aafca-4119-4abf-9be1-47080367f0f2.png)
 
  ### ROUTING
