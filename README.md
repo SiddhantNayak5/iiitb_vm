@@ -372,7 +372,8 @@ We will get following reports after clock tree synthesis:
 
 
 
-![cts](https://user-images.githubusercontent.com/110079689/187499504-293aafca-4119-4abf-9be1-47080367f0f2.png)
+![image](https://user-images.githubusercontent.com/110079689/192492148-ebbd143e-f3ff-42c7-89d0-8cfea7a201cd.png)
+
 
  ### ROUTING
  In this step we will do routing of our projects using:
