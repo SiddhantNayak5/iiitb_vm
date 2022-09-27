@@ -179,13 +179,6 @@ $ gtkwave iiitb_vm.vcd
 
 ## NETLIST <br/>
 In electronic design, a netlist is a description of the connectivity of an electronic circuit.In its simplest form, a netlist consists of a list of the electronic components in a circuit and a list of the nodes they are connected to. A network (net) is a collection of two or more interconnected components.<br/>
-
-On running the yosys script, we get the following output:
-
-- Stats <br/>
-
- ![Screenshot from 2022-08-16 21-24-12](https://user-images.githubusercontent.com/110079689/184926571-d4ef5dd3-f328-44ec-b7a9-30267cdfb29d.png)
- 
  
 ## POST SYNTHESIS SIMULATION <br/>
 
