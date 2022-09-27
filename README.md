@@ -80,7 +80,7 @@ To install GTKWave, type the following command in the terminal:
 ``` 
  $ git clone https://github.com/SiddhantNayak5/iiitb_vm
  $ cd iiitb_vm
- $ cd iiitb_vm.v
+ $ iverilog iiitb_vm.v iiitb_vm_tb.v
  $ ./a.out
  $ gtkwave iiitb_vm.vcd 
  ```
