@@ -328,6 +328,9 @@ In this part we will do sythesis of the project using following code:
 ```
  run_synthesis
 ```
+
+![Screenshot from 2022-08-30 15-16-53](https://user-images.githubusercontent.com/110079689/192500371-dbab21d1-34ab-40de-b542-f8114140c96e.png)
+
 This is synthesized output:
 
 ![stat](https://user-images.githubusercontent.com/110079689/187496738-73cb42f0-802f-4f91-a664-629e9880967a.png)
@@ -388,7 +391,8 @@ $ magic -T /home/siddhant/OpenLane/pdks/sky130A/libs.tech/magic/sky130A.tech lef
 
 We will get following layout after routing:
 
-![routing](https://user-images.githubusercontent.com/110079689/187500273-3484c4a4-6622-4eb0-9afc-1350617ef41d.png)
+
+![Screenshot from 2022-09-27 15-35-53](https://user-images.githubusercontent.com/110079689/192500765-436ab042-7b96-4868-841c-2cfe3d2e2bbe.png)
 
 
 
