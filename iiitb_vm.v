@@ -3,7 +3,7 @@ reg [2:0] c_state,n_state;
 
 always@(posedge clock)
 begin
-	if(reset)
+	if(~reset)
 		c_state<=3'b000;
 	else
 	    c_state<=n_state;
