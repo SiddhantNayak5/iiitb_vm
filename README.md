@@ -367,9 +367,25 @@ We will get following reports after clock tree synthesis:
 ![Screenshot from 2022-09-27 14-36-20](https://user-images.githubusercontent.com/110079689/192485519-060e6244-fa01-4907-8e43-5400f1da396a.png)
 
 
+![image](https://user-images.githubusercontent.com/110079689/192707539-ec93d9fd-47eb-46ca-8ff7-3830bdbbae11.png)
+
+
+
 
 ![image](https://user-images.githubusercontent.com/110079689/192492148-ebbd143e-f3ff-42c7-89d0-8cfea7a201cd.png)
 
+To calculate performance i.e. frequency of clock run OpenSta in OpenLane. Type the following commands in OpenLane:
+
+
+![Screenshot from 2022-09-27 20-21-41](https://user-images.githubusercontent.com/110079689/192708712-f25b6b20-12e2-4b92-9814-3b52735b58c5.png)
+
+####OpenSta report
+
+
+
+![slack](https://user-images.githubusercontent.com/110079689/192709002-cab7d573-3d1e-4bd6-9768-54eb65abceee.png)
+
+**Performance = 76.92MHz**
 
  ### ROUTING
  In this step we will do routing of our projects using:
@@ -387,7 +403,13 @@ We will get following layout after routing:
 
 ![Screenshot from 2022-09-27 15-35-53](https://user-images.githubusercontent.com/110079689/192500765-436ab042-7b96-4868-841c-2cfe3d2e2bbe.png)
 
+To calculate area type **'box'** command in Tkcon.tcl after selecting the design toplevel in magic.
 
+
+
+![box_area](https://user-images.githubusercontent.com/110079689/192709248-4465f624-f1dc-4865-8352-fa2edffba993.png)
+
+**Area = 8666.832 μm²**
 
  ## AUTHOR
  - Siddhant Nayak 
