@@ -377,7 +377,9 @@ We will get following reports after clock tree synthesis:
 To calculate performance i.e. frequency of clock run OpenSta in OpenLane. Type the following commands in OpenLane:
 
 
-![Screenshot from 2022-09-27 20-21-41](https://user-images.githubusercontent.com/110079689/192708712-f25b6b20-12e2-4b92-9814-3b52735b58c5.png)
+
+![clocks](https://user-images.githubusercontent.com/110079689/192710682-53770c73-fc9c-4d92-8519-fdfe8abdbf64.png)
+
 
 ####OpenSta report
 
