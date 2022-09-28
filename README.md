@@ -326,7 +326,10 @@ In this part we will do sythesis of the project using following code:
 
 This is synthesized output:
 
-![stat](https://user-images.githubusercontent.com/110079689/187496738-73cb42f0-802f-4f91-a664-629e9880967a.png)
+![WhatsApp Image 2022-09-28 at 12 04 17 PM](https://user-images.githubusercontent.com/110079689/192714893-637ee40e-eaaa-4c29-bbae-f787b3bdee59.jpeg)
+
+
+
 
 ### FLOOR PLANNING
 In floorplanning we will do following steps:
@@ -380,8 +383,7 @@ To calculate performance i.e. frequency of clock run OpenSta in OpenLane. Type t
 
 ![clocks](https://user-images.githubusercontent.com/110079689/192710682-53770c73-fc9c-4d92-8519-fdfe8abdbf64.png)
 
-
-####OpenSta report
+OpenSta report
 
 
 
