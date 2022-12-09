@@ -6,10 +6,6 @@ machine is an automated machine that provides items such as snacks,
 beverages and lottery tickets to consumers after payment into the machine
 is made.
 
-## STATE TRANSITION DIAGRAM
-![image](https://user-images.githubusercontent.com/110079689/181303096-08f7500d-2916-4bd7-a4de-3958465a53e1.png)
-
-The above figure is the state transition diagram of a vending machine with change system. In this project,the vending machine provides only one item(for example- a water bottle) whose cost is Rs15.
 
 ## STATE DIAGRAM DETAILS 
 Any sequential digital circuit can be converted into a state machine
