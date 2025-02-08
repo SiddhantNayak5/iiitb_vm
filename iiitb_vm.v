@@ -62,7 +62,7 @@ case(c_state)
 		else
 			n_state=3'b000;
 	  end
-3'b011:begin 
+3'b101:begin 
 		if(in==2'b00)
 			n_state=3'b000;
 		else if(in==2'b01)
